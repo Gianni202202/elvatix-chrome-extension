@@ -5,9 +5,8 @@ let width = 800;
 let height = 580;
 
 let iframe_onload = function () {
-    // Smoothly fade out the branded loading overlay
-    let overlay = document.getElementById('loadingOverlay');
-    if (overlay) overlay.classList.add('hidden');
+    let loading = document.getElementsByClassName('lds-ring')[0];
+    if (loading) loading.remove();
 }
 
 /**

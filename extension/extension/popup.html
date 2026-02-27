@@ -4,15 +4,20 @@
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <script src="popup.js"></script>
-    <div class="group_iframe">
-        <div class="lds-ring">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <!-- Premium branded loading overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <img src="images/elvatix-webapp-icon-256.png" class="loading-logo" alt="Elvatix">
+        <div class="loading-brand">Elvatix</div>
+        <div class="loading-tagline">Your LinkedIn co-pilot</div>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
+        <div class="loading-text">Loading</div>
     </div>
 
+    <!-- Iframe container (loads behind the overlay) -->
+    <div class="group_iframe"></div>
+
+    <script src="popup.js"></script>
 </body>
 </html>
